@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/estilos.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<title>IT - Soluciones informáticas</title>
+</head>
+<body>
+	<header>
+		<div>
+			<img src="/img/logo-crop-2.png" alt="Logotipo de la empresa IT.">
+		</div>
+
+		<nav>
+			<!-- Inicio tiene una página aparte -->
+			<a href="/index.html">Inicio</a>
+			<a href="/paginas/soluciones.html">Soluciones</a>
+			<a href="/paginas/nosotros.html">Nosotros</a>
+			<a href="/paginas/contacto.html">Contacto</a>
+		</nav>
+	</header>
+
+	<div class="iconos">
+		<img class="icon" src="/img/iconos/monitor-coloured.png" alt="Icono de una pantalla.">
+		<img class="icon" src="/img/iconos/wasd-coloured.png" alt="¡Icono de videojuegos!">
+		<img class="icon" src="/img/iconos/cube-coloured.png" alt="Icono de un cubo.">
+		<img class="icon" src="/img/iconos/planet-earth-coloured.png" alt="Icono de respetuoso con el medio ambiente.">
+		<img class="icon" src="/img/iconos/customer-support-coloured.png" alt="Icono de técnicos.">
+	</div>
+
+	<div class="fondo"></div>
+	<section>
+		<div class="contacto">
+			<h1 class="titulo-principal">Formulario de contacto</h1>
+
+			<p>¿Su empresa precisa alguna solución específica? Escríbanos su consulta aquí completando los campos y le responderemos a su casilla de correo lo más pronto posible.</p>
+
+			<!-- Action a reemplazarse por una ruta válida -->
+			<form id="formulario-contacto" method="POST" action="#">
+				<div class="mensaje-error"></div>
+				<div class="tabla-formulario">
+					<!-- <input name="nombre" type="text" placeholder="Ingrese su nombre" autocomplete="off" pattern="^[a-zA-ZñÑáéíóúÁÉÍÓÚ]+(\s+[a-zA-ZñÑáéíóúÁÉÍÓÚ]+)*$" title="𝗡𝗼𝗺𝗯𝗿𝗲&#010;Maýusculas y minúsculas, acentos y espacios intermedios después de un nombre." required tabindex="1"> -->
+					<input name="nombre" type="text" placeholder="Ingrese su nombre" autocomplete="off" title="𝗡𝗼𝗺𝗯𝗿𝗲&#010;Maýusculas y minúsculas, acentos y espacios intermedios después de un nombre." required tabindex="1">
+					<input name="email" type="email" placeholder="Su correo electrónico" autocomplete="off" title="𝗗𝗶𝗿. 𝗱𝗲 𝗰𝗼𝗿𝗿𝗲𝗼&#010;Debe ser una dirección de correo electrónico válida." required tabindex="2">
+					<button class="enviar-formulario" title="¡Enviar!" tabindex="4"><img src="/img/iconos/enviar.png" alt="Icono de enviar."></button>
+				</div>
+				<!-- <textarea name="consulta" id="consulta" form="formulario-contacto" cols="30" rows="10" placeholder="Escriba aquí su consulta. . ." autocomplete="off" pattern="^[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ0-9!\x22@#\$%\/\(\)='¡?¿,;\.:\-_\+\*€]+(\s+[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ0-9!\x22@#\$%\/\(\)='¡?¿,;\.:\-_\+\*€]+)*$" title="𝗖𝗼𝗻𝘀𝘂𝗹𝘁𝗮&#010;Caracteres alfanuméricos, especiales y saltos de línea.&#010;No se puede iniciar con un salto de línea.&#010;Se admiten los siguientes caracteres especiales: !&quot;@#$%/()='¡?¿,;.:-_+*€" required tabindex="3"></textarea> -->
+				<textarea name="consulta" id="consulta" form="formulario-contacto" cols="30" rows="10" placeholder="Escriba aquí su consulta. . ." autocomplete="off" title="𝗖𝗼𝗻𝘀𝘂𝗹𝘁𝗮&#010;Caracteres alfanuméricos, especiales y saltos de línea.&#010;No se puede iniciar con un salto de línea.&#010;Se admiten los siguientes caracteres especiales: !&quot;@#$%/()='¡?¿,;.:-_+*€" required tabindex="3"></textarea>
+				<button class="enviar-formulario oculto-responsive" title="¡Enviar!"><img src="/img/iconos/enviar.png" alt="Icono de enviar."></button>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="contenedor-footer">
+			<a href="https://www.afip.gob.ar/landing/default.asp" target="_blank"><img src="/img/data-fiscal.jpg" alt="Imagen del Formulario de Data Fiscal"></a>
+			<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.654487119917!2d-58.37017988477009!3d-34.61289748045711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352a71daddff%3A0xa22cf5ba7b285f6c!2sAzopardo%20451%2C%20C1107ADE%20CABA!5e0!3m2!1ses!2sar!4v1665872892451!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<div class="casa-central">
+				<h2>~ Casa central</h2>
+				<p>Azopardo 451</p>
+				<p>Piso 8 Oficina "A"</p>
+				<p>+54 11 4942 2494</p>
+				<p>C1107ADE - Ciudad Autónoma de Buenos Aires</p>
+			</div>
+		</div>
+
+
+		<div class="diseno">
+			<!-- Dominio fantasía -->
+			<p>IT Soluciones Informáticas - 2022 - Diseño por CaC - www.cacprogramacionweb.com.ar</p>
+		</div>
+	</footer>
+
+	<script src="/js/main.js"></script>
+</body>
+</html>
